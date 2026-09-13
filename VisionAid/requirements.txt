@@ -1,0 +1,19 @@
+# Core inference
+onnxruntime-qnn==1.18.0 ; platform_system == "Windows"   # Snapdragon NPU (QNN EP)
+onnxruntime==1.18.0 ; platform_system != "Windows"       # CPU fallback for dev machines
+numpy>=1.24
+opencv-python>=4.9
+
+# OCR (Read Mode)
+easyocr>=1.7
+pillow>=10.0
+
+# Offline text-to-speech
+pyttsx3>=2.90
+
+# Offline speech recognition (Voice Control)
+vosk>=0.3.45
+sounddevice>=0.4.6
+
+# GUI
+# tkinter ships with the standard Python installer on Windows — no pip install needed
